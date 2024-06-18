@@ -1,0 +1,202 @@
+/* Basic Reset 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #0056b3;
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #0056b3;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.btn {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #004494;
+}
+
+.buttons {
+    text-align: center;
+}
+
+input.editing {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+}*/
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #90caf9);
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #0277bd;
+    font-size: 26px;
+}
+
+.control-panel {
+    text-align: center;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff; /* Ensure the table background is solid white for better contrast */
+}
+
+th, td {
+    border: 1px solid #cccccc; /* Lighter border for less visual clutter */
+    text-align: left;
+    padding: 12px 15px; /* Increase padding for better spacing */
+    font-size: 16px; /* Larger font size for better readability */
+}
+
+th {
+    background-color: #007BFF; /* Brighter blue for header */
+    color: white;
+    font-size: 18px; /* Slightly larger font size for headers */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows, enhancing readability */
+}
+
+tr:hover {
+    background-color: #e0e0e0; /* Slightly darker shade on hover for interactivity */
+}
+
+.btn {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #004494;
+    transform: scale(1.05); /* Slight scaling on hover for a dynamic effect */
+}
+
+/* Ensure the button and table styles do not clash with each other and provide sufficient contrast */
+.editable-table {
+    cursor: pointer;
+}
+
+input.editing {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input.editing:focus {
+    box-shadow: 0 4px 8px rgba(0,0,100,0.2);
+}
+
+.export-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
